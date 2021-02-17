@@ -38,7 +38,11 @@ conta2.saca(10.00)
 conta2.extrato()
 
 
+print(conta2.saldo)
+print(conta2.titular)
+print(conta2.limite)
 
+conta2.saca(5000)
 
 
 
