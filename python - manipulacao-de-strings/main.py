@@ -40,4 +40,4 @@ ExtratorArgumentosUrl("")
 moeda_origem, moeda_destino, valor = argumento.extrai_argumentos()
 print(moeda_origem, moeda_destino, valor)
 
-
+print(argumento)
