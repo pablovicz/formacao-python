@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7d1969be-4636-498e-864a-bceb46233beb" name="Default Changelist" comment="Mais sobre métodos de strings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtratorArgumentosUrl.py" beforeDir="false" afterPath="$PROJECT_DIR$/ExtratorArgumentosUrl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613909227627</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Métodos Especiais">
+      <created>1613911228947</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1613911228947</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,7 +137,8 @@
     <MESSAGE value="Fatiando Strings" />
     <MESSAGE value="Mais sobre métodos de strings" />
     <MESSAGE value="Expressoes Regulares" />
-    <option name="LAST_COMMIT_MESSAGE" value="Expressoes Regulares" />
+    <MESSAGE value="Métodos Especiais" />
+    <option name="LAST_COMMIT_MESSAGE" value="Métodos Especiais" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
