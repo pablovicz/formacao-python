@@ -16,9 +16,8 @@ print(sorted(idades, reverse=True)) # descendente
 
 
 ## Sort
-idades.sort()  # vai ordenar o objeto lista
+idades.sort()  # vai ordenar o objeto lista - altera a lista original
 print(idades)
-
 
 
 
