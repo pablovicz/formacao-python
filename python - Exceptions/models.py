@@ -1,4 +1,4 @@
-from exceptions import SaldoInsuficienteError
+from exceptions import SaldoInsuficienteError, OperacaoFinanceiraError
 
 class Cliente:
     def __init__(self, nome, cpf, profissao):
@@ -14,6 +14,9 @@ class  ContaCorrente:
         self.__saldo = 100
         self.__agencia = 0
         self.__numero = 0
+        self.saques_nao_permitidos = 0
+        self.transferencias_nao_permitidas = 0
+
 
         self.cliente = cliente
         self.__set_agencia(agencia)
@@ -59,13 +62,20 @@ class  ContaCorrente:
     def transferir(self, valor, favorecido):
         if valor < 0:
             raise ValueError("O valor a ser sacado não pode ser menor que zero")
-        self.sacar(valor)
+
+        try:
+            self.sacar(valor)
+        except OperacaoFinanceiraError as E:
+            self.transferencias_nao_permitidas += 1
+            E.args = ()
+            raise OperacaoFinanceiraError("Operação não finalizada") from E
         favorecido.depositar(valor)
 
     def sacar(self, valor):
         if valor < 0:
             raise ValueError("O valor a ser sacado não pode ser menor que zero")
         if self.saldo < valor:
+            self.saques_nao_permitidos += 1
             raise SaldoInsuficienteError(saldo=self.saldo, valor=valor)
         else:
             self.saldo -= valor
