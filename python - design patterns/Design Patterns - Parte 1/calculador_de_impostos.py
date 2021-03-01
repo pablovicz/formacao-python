@@ -1,7 +1,7 @@
 from impostos import ISS, ICMS
 
 
-class Calculador_de_impostos(object):
+class CalculadorDeImpostos(object):
 
     def realiza_calculo(self, orcamento, imposto):
         ## Design Patter Strategy - passando as funcoes de calculo de imposto como parametro para o método
@@ -13,7 +13,7 @@ class Calculador_de_impostos(object):
 if __name__ == '__main__':
     from orcamento import Orcamento
 
-    calculador = Calculador_de_impostos()
+    calculador = CalculadorDeImpostos()
 
     orcamento = Orcamento(500)
 
