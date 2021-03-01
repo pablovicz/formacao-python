@@ -30,3 +30,5 @@ if __name__ == '__main__':
     calculador.realiza_calculo(orcamento, ICPP())
     print(f'IKCV:')
     calculador.realiza_calculo(orcamento, IKCV())
+    print("ICMS + ISS:")
+    calculador.realiza_calculo(orcamento, ICMS(ISS()))
